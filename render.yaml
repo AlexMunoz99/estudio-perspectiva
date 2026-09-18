@@ -1,8 +1,7 @@
 services:
-  - type: web
+  - type: static
     name: estudio-perspectiva
-    runtime: static
-    buildCommand: ""
+    buildCommand: echo "Static site ready"
     staticPublishPath: .
     routes:
       - type: rewrite
