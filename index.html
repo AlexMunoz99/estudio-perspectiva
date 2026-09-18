@@ -1238,7 +1238,7 @@
       </section>
 
       <!-- ================= 7. FOOTER & CONTACT ================= -->
-      <footer class="py-space-xl bg-inverse-surface text-inverse-on-surface border-t border-inverse-surface/20" id="contacto">
+      <footer class="pt-space-xl pb-28 md:pb-space-xl bg-inverse-surface text-inverse-on-surface border-t border-inverse-surface/20" id="contacto">
         <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet flex flex-col gap-space-lg">
           
           <!-- Call to action card inside footer -->
@@ -1315,14 +1315,27 @@
 
           </div>
 
-          <!-- Bottom Copyright -->
-          <div class="pt-space-sm border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-2 text-surface-dim font-label-sm text-label-sm uppercase tracking-wider">
-            <span>© 2025 Arq. Paulina Barba Martín • Estudio Perspectiva</span>
-            <div class="flex gap-4 text-surface-variant">
-              <a class="hover:underline" href="#">Tepatitlán</a>
-              <a class="hover:underline" href="#">Guadalajara</a>
-              <a class="hover:underline" href="#">Jalisco, México</a>
+          <!-- Bottom Copyright & Brand Credits -->
+          <div class="pt-space-sm border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-surface-dim font-label-sm text-label-sm">
+            <div class="flex flex-col sm:flex-row items-center gap-2 uppercase tracking-wider text-center sm:text-left">
+              <span>© 2025 Arq. Paulina Barba Martín • Estudio Perspectiva</span>
+              <span class="hidden sm:inline text-white/20">•</span>
+              <div class="flex gap-3 text-surface-variant">
+                <a class="hover:underline" href="#">Tepatitlán</a>
+                <a class="hover:underline" href="#">Guadalajara</a>
+                <a class="hover:underline" href="#">Jalisco, México</a>
+              </div>
             </div>
+
+            <!-- FIMMA Brand Attribution -->
+            <a href="https://fimma.mx" target="_blank" rel="noopener" class="group inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/[0.05] hover:bg-white/[0.1] border border-white/10 hover:border-amber-400/50 transition-all duration-300 shadow-sm" title="FIMMA · Ingeniería en Movimiento — Visitar fimma.mx">
+              <span class="text-xs uppercase tracking-wider text-surface-variant group-hover:text-surface-bright transition-colors font-medium">Desarrollado por</span>
+              <div class="flex items-center gap-1.5">
+                <img src="./images/logo-fimma.png" alt="Logo FIMMA" class="h-5 w-auto object-contain transition-transform duration-300 group-hover:scale-110"/>
+                <span class="font-bold tracking-widest text-xs text-amber-300 group-hover:text-amber-200 transition-colors uppercase">FIMMA</span>
+              </div>
+              <span class="material-symbols-outlined text-[15px] text-surface-variant group-hover:text-amber-300 group-hover:translate-x-0.5 transition-all">arrow_outward</span>
+            </a>
           </div>
 
         </div>
