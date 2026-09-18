@@ -1,0 +1,11 @@
+# Scratch & Python scripts
+scratch/
+
+# Redundant archives and folders
+*.zip
+Archivo (1)/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini

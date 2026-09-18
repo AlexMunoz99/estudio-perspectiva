@@ -1,0 +1,1732 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+  <title>Arq. Paulina Barba — Estudio Perspectiva | Arquitectura, Interiorismo & CV</title>
+  <meta name="description" content="Sitio oficial y portafolio de la Arq. Paulina Barba Martín (Estudio Perspectiva). Arquitectura residencial, dibujo ejecutivo, dirección de obra e interiorismo en Jalisco (Tepatitlán y Guadalajara)."/>
+  <meta property="og:title" content="Arq. Paulina Barba — Estudio Perspectiva"/>
+  <meta property="og:description" content="Arquitectura pensada desde la perspectiva del habitar. Obras residenciales, proyectos ejecutivos y dirección de obra en Jalisco."/>
+  <meta property="og:image" content="./images/paulina/casa_santa_barbara.jpg"/>
+  <link rel="icon" type="image/jpeg" href="./EstudioP2.jpeg"/>
+
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+
+  <!-- Local Font Declarations -->
+  <style>
+    @font-face {
+      font-family: 'Crimson Text Local';
+      src: url('./Archivo,Crimson_Text/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Crimson Text Local';
+      src: url('./Archivo,Crimson_Text/Crimson_Text/CrimsonText-SemiBold.ttf') format('truetype');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Crimson Text Local';
+      src: url('./Archivo,Crimson_Text/Crimson_Text/CrimsonText-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Crimson Text Local';
+      src: url('./Archivo,Crimson_Text/Crimson_Text/CrimsonText-Italic.ttf') format('truetype');
+      font-weight: 400;
+      font-style: italic;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Archivo Local';
+      src: url('./Archivo,Crimson_Text/Archivo/Archivo-VariableFont_wdth,wght.ttf') format('truetype');
+      font-weight: 100 900;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @layer base {
+      html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overscroll-behavior-y: none;
+      }
+      .pb-safe {
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+      }
+      .pt-safe {
+        padding-top: env(safe-area-inset-top, 0px);
+      }
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    @media print {
+      header, nav, footer, #diagnostico, #faq, .no-print {
+        display: none !important;
+      }
+      body {
+        background: white !important;
+        color: black !important;
+      }
+      #cv {
+        display: block !important;
+      }
+    }
+  </style>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "secondary": "#55615d",
+            "inverse-primary": "#ffb782",
+            "on-secondary-container": "#5a6561",
+            "on-error": "#ffffff",
+            "surface-container": "#f0eded",
+            "on-tertiary-fixed-variant": "#3c4a44",
+            "secondary-fixed": "#d9e5e0",
+            "surface-tint": "#904d0d",
+            "primary": "#8d4a0a",
+            "on-primary-fixed": "#301400",
+            "surface-dim": "#dcd9d9",
+            "background": "#fcf9f8",
+            "primary-container": "#ab6224",
+            "tertiary-fixed": "#d6e6de",
+            "on-primary-container": "#fffbff",
+            "tertiary": "#515f59",
+            "on-secondary": "#ffffff",
+            "error-container": "#ffdad6",
+            "primary-fixed": "#ffdcc5",
+            "primary-fixed-dim": "#ffb782",
+            "inverse-on-surface": "#f3f0ef",
+            "outline": "#867367",
+            "surface-variant": "#e5e2e1",
+            "on-secondary-fixed-variant": "#3e4945",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f6f3f2",
+            "on-error-container": "#93000a",
+            "on-primary-fixed-variant": "#703800",
+            "on-background": "#1b1b1b",
+            "outline-variant": "#d9c2b4",
+            "secondary-container": "#d6e2dd",
+            "on-surface-variant": "#534439",
+            "tertiary-fixed-dim": "#bbcac2",
+            "on-tertiary-container": "#f5fff9",
+            "surface": "#fcf9f8",
+            "error": "#ba1a1a",
+            "on-tertiary": "#ffffff",
+            "surface-container-highest": "#e5e2e1",
+            "on-tertiary-fixed": "#111e19",
+            "surface-container-high": "#eae7e7",
+            "secondary-fixed-dim": "#bdc9c4",
+            "inverse-surface": "#313030",
+            "on-secondary-fixed": "#131e1b",
+            "surface-bright": "#fcf9f8",
+            "on-primary": "#ffffff",
+            "tertiary-container": "#697871",
+            "on-surface": "#1b1b1b"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "2rem",
+            "space-xl": "3.5rem",
+            "margin-mobile": "1.25rem",
+            "margin-tablet": "2.5rem",
+            "margin": "4rem",
+            "gutter": "1.5rem"
+          },
+          fontFamily: {
+            "display-lg": ["'Crimson Text Local'", "'Crimson Text'", "Georgia", "serif"],
+            "display-lg-mobile": ["'Crimson Text Local'", "'Crimson Text'", "Georgia", "serif"],
+            "headline-lg": ["'Crimson Text Local'", "'Crimson Text'", "Georgia", "serif"],
+            "headline-lg-mobile": ["'Crimson Text Local'", "'Crimson Text'", "Georgia", "serif"],
+            "headline-md": ["'Crimson Text Local'", "'Crimson Text'", "Georgia", "serif"],
+            "headline-sm": ["'Archivo Local'", "'Archivo'", "sans-serif"],
+            "body-lg": ["'Archivo Local'", "'Archivo'", "sans-serif"],
+            "body-md": ["'Archivo Local'", "'Archivo'", "sans-serif"],
+            "body-sm": ["'Archivo Local'", "'Archivo'", "sans-serif"],
+            "label-md": ["'Archivo Local'", "'Archivo'", "sans-serif"],
+            "label-sm": ["'Archivo Local'", "'Archivo'", "sans-serif"],
+            "serif-quote": ["'Crimson Text Local'", "'Crimson Text'", "serif"]
+          },
+          fontSize: {
+            "display-lg-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "400" }],
+            "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0.01em", fontWeight: "400" }],
+            "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.08em", fontWeight: "500" }],
+            "display-lg": ["56px", { lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "400" }],
+            "headline-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "400" }],
+            "headline-md": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "500" }],
+            "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.12em", fontWeight: "600" }],
+            "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "0.01em", fontWeight: "300" }],
+            "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "400" }],
+            "headline-sm": ["22px", { lineHeight: "30px", letterSpacing: "0em", fontWeight: "500" }],
+            "headline-lg-mobile": ["30px", { lineHeight: "38px", letterSpacing: "-0.01em", fontWeight: "400" }]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen antialiased selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+
+  <!-- ================= TOP HEADER ================= -->
+  <header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl border-b border-surface-container shadow-[0_1px_8px_rgba(0,0,0,0.04)] transition-all">
+    <div class="max-w-7xl mx-auto h-20 px-margin-mobile md:px-margin-tablet flex items-center justify-between gap-space-xs">
+      
+      <!-- Brand Logo & Name -->
+      <a href="#" class="flex items-center gap-3 group">
+        <img alt="Logotipo Estudio Perspectiva" class="h-9 md:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" src="./EstudioP4.jpeg"/>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-6 lg:gap-8">
+        <a href="#inicio" class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors">Inicio</a>
+        <a href="#proyectos" class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors">Obras</a>
+        <a href="#perfil" class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors">Paulina Barba</a>
+        <a href="#cv" class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors">CV & Trayectoria</a>
+        <a href="#escalas-cad" class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors">Escalas CAD</a>
+        <a href="#diagnostico" class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors">Cotizar</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-2 md:gap-3">
+        <a href="#diagnostico" class="min-h-[42px] px-4 md:px-5 py-2 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider rounded-md flex items-center justify-center gap-1.5 shadow-sm transition-all duration-200 hover:bg-primary-container hover:shadow active:scale-[0.98]">
+          <span>Cotizar Proyecto</span>
+          <span class="material-symbols-outlined text-[16px] hidden sm:inline">arrow_forward</span>
+        </a>
+
+        <!-- Direct WhatsApp Quick Access -->
+        <a href="https://wa.me/523781425739?text=Hola%20Arq.%20Paulina%20Barba,%20quisiera%20consultar%20sobre%20un%20proyecto%20arquitectónico" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-10 h-10 flex items-center justify-center text-primary bg-surface-container-low hover:bg-surface-container-high rounded-md transition-colors" title="Contactar por WhatsApp">
+          <span class="material-symbols-outlined text-[20px]">chat</span>
+        </a>
+
+        <!-- Mobile Drawer Menu Toggle -->
+        <button id="mobile-menu-btn" aria-label="Abrir Menú" class="md:hidden w-10 h-10 flex items-center justify-center text-on-surface hover:text-primary active:bg-surface-container-high rounded-md transition-colors">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Slide-out Drawer Menu -->
+    <div id="mobile-drawer" class="hidden md:hidden bg-surface border-b border-surface-container px-margin-mobile py-4 flex-col gap-3 shadow-lg">
+      <a href="#inicio" class="mobile-nav-link py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface hover:text-primary flex items-center justify-between">
+        <span>Inicio</span><span class="material-symbols-outlined text-[18px]">chevron_right</span>
+      </a>
+      <a href="#proyectos" class="mobile-nav-link py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface hover:text-primary flex items-center justify-between">
+        <span>Obras & Proyectos</span><span class="material-symbols-outlined text-[18px]">chevron_right</span>
+      </a>
+      <a href="#perfil" class="mobile-nav-link py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface hover:text-primary flex items-center justify-between">
+        <span>Arq. Paulina Barba Martín</span><span class="material-symbols-outlined text-[18px]">chevron_right</span>
+      </a>
+      <a href="#cv" class="mobile-nav-link py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface hover:text-primary flex items-center justify-between">
+        <span>Curriculum Vitae (CV)</span><span class="material-symbols-outlined text-[18px]">chevron_right</span>
+      </a>
+      <a href="#escalas-cad" class="mobile-nav-link py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface hover:text-primary flex items-center justify-between">
+        <span>Bloques Escalas CAD</span><span class="material-symbols-outlined text-[18px]">chevron_right</span>
+      </a>
+      <a href="#diagnostico" class="mobile-nav-link py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface hover:text-primary flex items-center justify-between">
+        <span>Cotizador & Diagnóstico</span><span class="material-symbols-outlined text-[18px]">chevron_right</span>
+      </a>
+      <a href="#contacto" class="mobile-nav-link py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface hover:text-primary flex items-center justify-between">
+        <span>Contacto Directo</span><span class="material-symbols-outlined text-[18px]">chevron_right</span>
+      </a>
+      <div class="pt-2 border-t border-surface-container flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm">
+        <span>Tepatitlán & Guadalajara</span>
+        <a href="tel:+523781425739" class="text-primary font-medium">+52 378 142 5739</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="flex-1 flex flex-col relative w-full pt-20 pb-24 md:pb-16 bg-surface">
+    <div class="flex flex-col w-full text-on-surface" id="inicio">
+
+      <!-- ================= 1. HERO SECTION ================= -->
+      <section class="relative max-w-7xl mx-auto w-full px-margin-mobile md:px-margin-tablet pt-4 md:pt-8 pb-space-lg flex flex-col gap-space-md">
+        
+        <!-- Architectural Hero Photography with Ambient Tint & Metadata Badge -->
+        <div class="relative w-full rounded-xl overflow-hidden bg-surface-container shadow-lg group">
+          <img class="w-full h-80 sm:h-[460px] lg:h-[540px] object-cover transition-transform duration-700 group-hover:scale-[1.02]" 
+               alt="Casa Santa Bárbara en Jalisco por Arq. Paulina Barba Martín — Estudio Perspectiva" 
+               src="./images/paulina/casa_santa_barbara.jpg"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/30 to-transparent"></div>
+          
+          <!-- Badge and Project Info Overlay -->
+          <div class="absolute bottom-4 sm:bottom-8 left-4 sm:left-8 right-4 sm:right-8 flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+            <div class="flex flex-col gap-1.5 max-w-xl">
+              <span class="inline-block self-start px-3 py-1 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider rounded-md shadow-sm">
+                Proyecto Residencial Destacado
+              </span>
+              <h2 class="font-headline-md md:font-display-lg text-headline-md md:text-display-lg text-surface-bright drop-shadow-md font-serif-quote">
+                Casa Santa Bárbara
+              </h2>
+              <p class="font-body-md text-surface-container-low font-light flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px] text-primary-fixed">straighten</span>
+                <span>Jalisco, México • Celosía artesanal de barro, terrazas y luz natural</span>
+              </p>
+            </div>
+            
+            <a href="#proyectos" class="self-start sm:self-auto px-4 py-2 bg-surface/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm uppercase tracking-wider rounded-md shadow hover:bg-surface transition-colors flex items-center gap-1.5">
+              <span>Ver Obras de Paulina</span>
+              <span class="material-symbols-outlined text-[16px]">visibility</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Editorial Title & Value Proposition -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mt-2 pt-2">
+          <div class="flex flex-col gap-2 max-w-2xl">
+            <span class="font-label-sm text-label-sm uppercase text-primary tracking-widest font-semibold flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-primary inline-block"></span>
+              Arq. Paulina Barba Martín • Estudio Perspectiva
+            </span>
+            <h1 class="font-headline-lg-mobile md:font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface tracking-tight font-serif-quote leading-tight">
+              Arquitectura pensada desde la perspectiva del habitar.
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant font-light mt-1">
+              Diseño residencial, proyectos ejecutivos, dirección de obra e interiorismo a medida. Rigor técnico en planos de carpinterías, axonométricos y control presupuestario para materializar tu espacio sin imprevistos.
+            </p>
+          </div>
+
+          <!-- Dual Actions for Desktop & Mobile -->
+          <div class="flex flex-col sm:flex-row gap-3 flex-shrink-0">
+            <a class="h-12 px-space-md bg-primary text-on-primary rounded-md flex items-center justify-center gap-2 font-label-md text-label-md uppercase tracking-wider shadow-sm transition-all hover:bg-primary-container hover:shadow active:scale-[0.98]" href="#proyectos">
+              <span>Explorar Portafolio</span>
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </a>
+            <a class="h-12 px-space-md bg-surface-container-high text-on-surface rounded-md flex items-center justify-center gap-2 font-label-md text-label-md uppercase tracking-wider transition-colors hover:bg-surface-container-highest active:bg-surface-container-highest" href="#diagnostico">
+              <span class="material-symbols-outlined text-[18px] text-primary">calendar_today</span>
+              <span>Cotizar Proyecto</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Architecture Scope Metadata Ribbon -->
+        <div class="p-space-sm sm:p-4 bg-surface-container-low rounded-lg border border-surface-container flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+          <div class="flex items-center gap-space-xs">
+            <span class="material-symbols-outlined text-primary text-[22px]">explore</span>
+            <p class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider leading-tight">
+              Sede Operativa: <span class="text-on-surface-variant font-normal">Tepatitlán de Morelos & Guadalajara, Jalisco • Proyectos presenciales y remotos</span>
+            </p>
+          </div>
+          <div class="flex items-center gap-4 text-on-surface-variant font-label-sm text-label-sm uppercase">
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">school</span> Egresada ITESO (2017-2022)</span>
+            <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">draw</span> Harvard edX Certified</span>
+          </div>
+        </div>
+
+        <!-- Key Metrics Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+          <div class="p-space-md bg-surface-container-lowest rounded-lg border border-surface-container shadow-sm flex flex-col items-center text-center">
+            <span class="font-headline-md text-headline-md text-primary font-bold">ITESO</span>
+            <span class="font-label-sm text-label-sm uppercase text-on-surface-variant mt-0.5">Formación de Grado</span>
+          </div>
+          <div class="p-space-md bg-surface-container-lowest rounded-lg border border-surface-container shadow-sm flex flex-col items-center text-center">
+            <span class="font-headline-md text-headline-md text-primary font-bold">+10</span>
+            <span class="font-label-sm text-label-sm uppercase text-on-surface-variant mt-0.5">Obras & Diseños Clave</span>
+          </div>
+          <div class="p-space-md bg-surface-container-lowest rounded-lg border border-surface-container shadow-sm flex flex-col items-center text-center">
+            <span class="font-headline-md text-headline-md text-primary font-bold">Global</span>
+            <span class="font-label-sm text-label-sm uppercase text-on-surface-variant mt-0.5">México, NY & Australia</span>
+          </div>
+          <div class="p-space-md bg-surface-container-lowest rounded-lg border border-surface-container shadow-sm flex flex-col items-center text-center">
+            <span class="font-headline-md text-headline-md text-primary font-bold">AutoCAD</span>
+            <span class="font-label-sm text-label-sm uppercase text-on-surface-variant mt-0.5">Detalle & Axonométricos</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 2. PERFIL DE PAULINA BARBA ================= -->
+      <section class="py-space-xl max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet flex flex-col gap-space-md" id="perfil">
+        
+        <div class="flex flex-col gap-1 max-w-2xl">
+          <span class="font-label-sm text-label-sm uppercase text-primary tracking-widest font-semibold">Sobre la Profesional</span>
+          <h2 class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-on-surface font-serif-quote">
+            Arq. Paulina Barba Martín
+          </h2>
+        </div>
+
+        <!-- Editorial Founder Card -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 bg-surface-container-low rounded-xl overflow-hidden border border-surface-container shadow-sm">
+          
+          <!-- Portrait Image -->
+          <div class="lg:col-span-4 relative w-full aspect-[3/4] sm:aspect-square lg:aspect-auto lg:h-full bg-surface-container flex items-center justify-center overflow-hidden">
+            <img alt="Arq. Paulina Barba Martín — Estudio Perspectiva" 
+                 class="w-full h-full object-cover object-center" 
+                 src="./images/paulina/paulina_barba.jpg"/>
+          </div>
+
+          <!-- Profile Text -->
+          <div class="lg:col-span-8 p-space-md sm:p-8 flex flex-col justify-between gap-6">
+            <div class="flex flex-col gap-4">
+              <div class="flex flex-col">
+                <span class="font-display-lg-mobile md:font-headline-lg text-headline-lg text-on-surface font-serif-quote">Paulina Barba Martín</span>
+                <span class="font-label-sm text-label-sm uppercase text-primary tracking-wider font-semibold">Arquitecta (ITESO 2017-2022) • Co-fundadora de Estudio Perspectiva</span>
+              </div>
+
+              <blockquote class="font-body-lg text-body-lg text-on-surface italic font-light border-l-2 border-primary pl-4 py-1">
+                "De los seis hobbies que practico de manera regular, destaca la rotoscopia, donde combino mi amor por el dibujo, la música y la arquitectura. Mi programa predilecto es AutoCAD, donde me apasiona desarrollar axonométricos y planos de carpinterías al detalle."
+              </blockquote>
+
+              <p class="font-body-md text-on-surface-variant font-light">
+                Estudió Arquitectura en el <strong>Instituto Tecnológico de Estudios Superiores de Occidente (ITESO)</strong> entre 2017 y 2022. Es co-fundadora del taller de diseño y de <em>Estudio Perspectiva</em>, donde coordina y proyecta intervenciones de restauración, vivienda residencial, edificios mixtos y naves industriales en Jalisco.
+              </p>
+
+              <!-- Highlights -->
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+                <div class="p-3 bg-surface-container-lowest rounded-lg border border-surface-container">
+                  <span class="font-label-sm text-label-sm text-primary uppercase block font-semibold">Ubicación</span>
+                  <span class="font-body-sm text-on-surface font-medium">Tepatitlán & GDL</span>
+                </div>
+                <div class="p-3 bg-surface-container-lowest rounded-lg border border-surface-container">
+                  <span class="font-label-sm text-label-sm text-primary uppercase block font-semibold">Contacto Directo</span>
+                  <a href="tel:+523781425739" class="font-body-sm text-on-surface font-medium hover:text-primary">378 142 5739</a>
+                </div>
+                <div class="p-3 bg-surface-container-lowest rounded-lg border border-surface-container col-span-2 sm:col-span-1">
+                  <span class="font-label-sm text-label-sm text-primary uppercase block font-semibold">Instagram</span>
+                  <a href="https://www.instagram.com/estudioperspectiva.mx/" target="_blank" rel="noopener" class="font-body-sm text-primary font-medium hover:underline">@estudioperspectiva.mx</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Call to Actions -->
+            <div class="flex flex-wrap gap-3 pt-4 border-t border-surface-container">
+              <a href="#cv" class="px-5 py-2.5 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider rounded-md flex items-center gap-2 hover:bg-primary-container transition-colors">
+                <span class="material-symbols-outlined text-[18px]">badge</span>
+                <span>Ver Curriculum Completo</span>
+              </a>
+              <a href="https://wa.me/523781425739?text=Hola%20Paulina,%20me%20gustaría%20agendar%20una%20reunión%20para%20un%20proyecto" target="_blank" rel="noopener" class="px-5 py-2.5 bg-surface-container text-on-surface font-label-md text-label-md uppercase tracking-wider rounded-md flex items-center gap-2 hover:bg-surface-container-high transition-colors">
+                <span class="material-symbols-outlined text-[18px]">chat</span>
+                <span>Enviar WhatsApp a Paulina</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ================= 3. PORTFOLIO DE OBRAS REALES ================= -->
+      <section class="py-space-xl bg-surface-container-low border-y border-surface-container" id="proyectos">
+        <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet flex flex-col gap-space-md">
+          
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+            <div class="flex flex-col gap-1 max-w-2xl">
+              <span class="font-label-sm text-label-sm uppercase text-primary tracking-widest font-semibold">Portafolio Profesional</span>
+              <h2 class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-on-surface font-serif-quote">
+                Proyectos & Obras Diseñadas
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant font-light">
+                Selección de obras residenciales, intervenciones de interiorismo, proyectos industriales, axonométricos y planeación urbana desarrollados por Paulina Barba.
+              </p>
+            </div>
+
+            <!-- Filter Pills -->
+            <div class="flex gap-2 overflow-x-auto pb-1 no-scrollbar" id="project-filters">
+              <button class="px-3.5 py-1.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider rounded-md filter-btn active-filter transition-colors" data-filter="all">Todos</button>
+              <button class="px-3.5 py-1.5 bg-surface-container-highest text-on-surface font-label-sm text-label-sm uppercase tracking-wider rounded-md filter-btn transition-colors hover:bg-surface-container-high" data-filter="residencial">Residencial</button>
+              <button class="px-3.5 py-1.5 bg-surface-container-highest text-on-surface font-label-sm text-label-sm uppercase tracking-wider rounded-md filter-btn transition-colors hover:bg-surface-container-high" data-filter="interiorismo">Interiorismo</button>
+              <button class="px-3.5 py-1.5 bg-surface-container-highest text-on-surface font-label-sm text-label-sm uppercase tracking-wider rounded-md filter-btn transition-colors hover:bg-surface-container-high" data-filter="comercial">Comercial & Industrial</button>
+              <button class="px-3.5 py-1.5 bg-surface-container-highest text-on-surface font-label-sm text-label-sm uppercase tracking-wider rounded-md filter-btn transition-colors hover:bg-surface-container-high" data-filter="conceptual">Conceptual & Renders</button>
+            </div>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-2" id="projects-grid">
+            
+            <!-- Project 1: Casa Tulipán -->
+            <div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-surface-container hover:shadow-md transition-all group" data-category="interiorismo">
+              <div class="relative w-full h-60 bg-surface-container overflow-hidden cursor-pointer open-modal-btn" data-project="casa-tulipan">
+                <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                     alt="Casa Tulipán — Paulina Barba" 
+                     src="./images/paulina/casa_tulipan.jpg"/>
+                <div class="absolute top-2 right-2 flex gap-1">
+                  <span class="px-2.5 py-0.5 bg-surface-container-highest/90 text-on-surface font-label-sm text-label-sm uppercase rounded backdrop-blur-sm">Interiorismo</span>
+                  <span class="px-2.5 py-0.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase rounded">Color & Madera</span>
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col gap-2 flex-1 justify-between">
+                <div class="flex flex-col gap-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Casa Tulipán</h3>
+                  <p class="font-body-sm text-on-surface-variant flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[16px] text-primary">home</span>
+                    Residencial • Carpinterías a Detalle & Acentos Vivos
+                  </p>
+                  <p class="font-body-md text-body-md text-on-surface-variant font-light mt-1">
+                    Diseño de acceso e interiorismo contemporáneo, combinando pórticos de color vibrante, celosías de madera corredizas y vegetación interior integrada.
+                  </p>
+                </div>
+                <button class="w-full mt-3 py-2 px-3 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm uppercase rounded flex items-center justify-center gap-1 transition-colors open-modal-btn" data-project="casa-tulipan">
+                  <span>Ver Ficha Técnica</span>
+                  <span class="material-symbols-outlined text-[16px]">info</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Project 2: Escorza 327 -->
+            <div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-surface-container hover:shadow-md transition-all group" data-category="interiorismo">
+              <div class="relative w-full h-60 bg-surface-container overflow-hidden cursor-pointer open-modal-btn" data-project="escorza-327">
+                <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                     alt="Escorza 327 — Paulina Barba" 
+                     src="./images/paulina/escorza_327.jpg"/>
+                <div class="absolute top-2 right-2 flex gap-1">
+                  <span class="px-2.5 py-0.5 bg-surface-container-highest/90 text-on-surface font-label-sm text-label-sm uppercase rounded backdrop-blur-sm">Intervención</span>
+                  <span class="px-2.5 py-0.5 bg-secondary text-on-secondary font-label-sm text-label-sm uppercase rounded">Vistas Urbanas</span>
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col gap-2 flex-1 justify-between">
+                <div class="flex flex-col gap-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Escorza 327</h3>
+                  <p class="font-body-sm text-on-surface-variant flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[16px] text-primary">location_city</span>
+                    Guadalajara • Enmarque del Paisaje Histórico
+                  </p>
+                  <p class="font-body-md text-body-md text-on-surface-variant font-light mt-1">
+                    Diseño de espacio interior con gran ventanal continuo orientado hacia las torres y campanarios históricos, carpinterías flotantes y mobiliario en cuero cálido.
+                  </p>
+                </div>
+                <button class="w-full mt-3 py-2 px-3 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm uppercase rounded flex items-center justify-center gap-1 transition-colors open-modal-btn" data-project="escorza-327">
+                  <span>Ver Ficha Técnica</span>
+                  <span class="material-symbols-outlined text-[16px]">info</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Project 3: Casa Santa Bárbara -->
+            <div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-surface-container hover:shadow-md transition-all group" data-category="residencial">
+              <div class="relative w-full h-60 bg-surface-container overflow-hidden cursor-pointer open-modal-btn" data-project="casa-santa-barbara">
+                <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                     alt="Casa Santa Bárbara — Paulina Barba" 
+                     src="./images/paulina/casa_santa_barbara.jpg"/>
+                <div class="absolute top-2 right-2 flex gap-1">
+                  <span class="px-2.5 py-0.5 bg-surface-container-highest/90 text-on-surface font-label-sm text-label-sm uppercase rounded backdrop-blur-sm">Obra Nueva</span>
+                  <span class="px-2.5 py-0.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase rounded">Ladrillo & Celosía</span>
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col gap-2 flex-1 justify-between">
+                <div class="flex flex-col gap-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Casa Santa Bárbara</h3>
+                  <p class="font-body-sm text-on-surface-variant flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[16px] text-primary">villa</span>
+                    Jalisco • Residencia Multinivel & Patios
+                  </p>
+                  <p class="font-body-md text-body-md text-on-surface-variant font-light mt-1">
+                    Composición volumétrica escalonada con celosías artesanales de ladrillo rojo que tamizan la luz solar del poniente y generan terrazas ajardinadas en cada nivel.
+                  </p>
+                </div>
+                <button class="w-full mt-3 py-2 px-3 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm uppercase rounded flex items-center justify-center gap-1 transition-colors open-modal-btn" data-project="casa-santa-barbara">
+                  <span>Ver Ficha Técnica</span>
+                  <span class="material-symbols-outlined text-[16px]">info</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Project 4: Casa Santa Fe -->
+            <div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-surface-container hover:shadow-md transition-all group" data-category="residencial">
+              <div class="relative w-full h-60 bg-surface-container overflow-hidden cursor-pointer open-modal-btn" data-project="casa-santa-fe">
+                <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                     alt="Casa Santa Fe en proceso de obra — Paulina Barba" 
+                     src="./images/paulina/casa_santa_fe.jpg"/>
+                <div class="absolute top-2 right-2 flex gap-1">
+                  <span class="px-2.5 py-0.5 bg-secondary text-on-secondary font-label-sm text-label-sm uppercase rounded">En Obra</span>
+                  <span class="px-2.5 py-0.5 bg-surface-container-highest/90 text-on-surface font-label-sm text-label-sm uppercase rounded backdrop-blur-sm">Supervisión In-Situ</span>
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col gap-2 flex-1 justify-between">
+                <div class="flex flex-col gap-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Casa Santa Fe</h3>
+                  <p class="font-body-sm text-on-surface-variant flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[16px] text-primary">construction</span>
+                    Jalisco • Residencia Unifamiliar en Construcción
+                  </p>
+                  <p class="font-body-md text-body-md text-on-surface-variant font-light mt-1">
+                    Seguimiento directo en obra, cálculo de niveles, supervisión de armado de castillos, losas y muros de mampostería tradicional en ladrillo de lama.
+                  </p>
+                </div>
+                <button class="w-full mt-3 py-2 px-3 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm uppercase rounded flex items-center justify-center gap-1 transition-colors open-modal-btn" data-project="casa-santa-fe">
+                  <span>Ver Ficha Técnica</span>
+                  <span class="material-symbols-outlined text-[16px]">info</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Project 5: Bodega Aeropuerto -->
+            <div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-surface-container hover:shadow-md transition-all group" data-category="comercial">
+              <div class="relative w-full h-60 bg-surface-container overflow-hidden cursor-pointer open-modal-btn" data-project="bodega-aeropuerto">
+                <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                     alt="Bodega Aeropuerto — Paulina Barba" 
+                     src="./images/paulina/bodega_aeropuerto.jpg"/>
+                <div class="absolute top-2 right-2 flex gap-1">
+                  <span class="px-2.5 py-0.5 bg-surface-container-highest/90 text-on-surface font-label-sm text-label-sm uppercase rounded backdrop-blur-sm">Industrial</span>
+                  <span class="px-2.5 py-0.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase rounded">Estructura Acero</span>
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col gap-2 flex-1 justify-between">
+                <div class="flex flex-col gap-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Bodega Aeropuerto</h3>
+                  <p class="font-body-sm text-on-surface-variant flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[16px] text-primary">warehouse</span>
+                    Zona Aeropuerto • Nave Industrial & Logística
+                  </p>
+                  <p class="font-body-md text-body-md text-on-surface-variant font-light mt-1">
+                    Desarrollo de planos ejecutivos, cálculo de armaduras de acero, bahías de carga y descarga, áreas administrativas y oficinas operativas.
+                  </p>
+                </div>
+                <button class="w-full mt-3 py-2 px-3 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm uppercase rounded flex items-center justify-center gap-1 transition-colors open-modal-btn" data-project="bodega-aeropuerto">
+                  <span>Ver Ficha Técnica</span>
+                  <span class="material-symbols-outlined text-[16px]">info</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Project 6: Estudio 33 -->
+            <div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-surface-container hover:shadow-md transition-all group" data-category="comercial">
+              <div class="relative w-full h-60 bg-surface-container overflow-hidden cursor-pointer open-modal-btn" data-project="estudio-33">
+                <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                     alt="Estudio 33 Oficinas — Paulina Barba" 
+                     src="./images/paulina/estudio_33.jpg"/>
+                <div class="absolute top-2 right-2 flex gap-1">
+                  <span class="px-2.5 py-0.5 bg-surface-container-highest/90 text-on-surface font-label-sm text-label-sm uppercase rounded backdrop-blur-sm">Corporativo</span>
+                  <span class="px-2.5 py-0.5 bg-secondary text-on-secondary font-label-sm text-label-sm uppercase rounded">Arquitectura Urbana</span>
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col gap-2 flex-1 justify-between">
+                <div class="flex flex-col gap-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Estudio 33</h3>
+                  <p class="font-body-sm text-on-surface-variant flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[16px] text-primary">domain</span>
+                    Corporativo • Arquitectura, Ingeniería & Urbanismo
+                  </p>
+                  <p class="font-body-md text-body-md text-on-surface-variant font-light mt-1">
+                    Módulo de oficinas con envolvente metálica negra, vanos horizontales continuos y diálogo respetuoso con el entorno natural adyacente.
+                  </p>
+                </div>
+                <button class="w-full mt-3 py-2 px-3 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm uppercase rounded flex items-center justify-center gap-1 transition-colors open-modal-btn" data-project="estudio-33">
+                  <span>Ver Ficha Técnica</span>
+                  <span class="material-symbols-outlined text-[16px]">info</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Project 7: Proyecto AM -->
+            <div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-surface-container hover:shadow-md transition-all group" data-category="conceptual">
+              <div class="relative w-full h-60 bg-surface-container overflow-hidden cursor-pointer open-modal-btn" data-project="proyecto-am">
+                <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                     alt="Proyecto AM Axonométrico — Paulina Barba" 
+                     src="./images/paulina/proyecto_am.jpg"/>
+                <div class="absolute top-2 right-2 flex gap-1">
+                  <span class="px-2.5 py-0.5 bg-surface-container-highest/90 text-on-surface font-label-sm text-label-sm uppercase rounded backdrop-blur-sm">Axonométrico</span>
+                  <span class="px-2.5 py-0.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase rounded">Sección Espacial</span>
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col gap-2 flex-1 justify-between">
+                <div class="flex flex-col gap-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Proyecto AM</h3>
+                  <p class="font-body-sm text-on-surface-variant flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[16px] text-primary">view_in_ar</span>
+                    Corte Perspectivado • Distribución Multinivel
+                  </p>
+                  <p class="font-body-md text-body-md text-on-surface-variant font-light mt-1">
+                    Corte axonométrico tridimensional que revela la doble altura central, los flujos peatonales interiores y la modulación de mobiliario fijo de carpintería.
+                  </p>
+                </div>
+                <button class="w-full mt-3 py-2 px-3 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm uppercase rounded flex items-center justify-center gap-1 transition-colors open-modal-btn" data-project="proyecto-am">
+                  <span>Ver Ficha Técnica</span>
+                  <span class="material-symbols-outlined text-[16px]">info</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Project 8: Wave (Maqueta & Conceptual) -->
+            <div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-surface-container hover:shadow-md transition-all group" data-category="conceptual">
+              <div class="relative w-full h-60 bg-surface-container overflow-hidden cursor-pointer open-modal-btn" data-project="wave">
+                <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                     alt="Instalación Wave — Paulina Barba" 
+                     src="./images/paulina/wave.jpg"/>
+                <div class="absolute top-2 right-2 flex gap-1">
+                  <span class="px-2.5 py-0.5 bg-surface-container-highest/90 text-on-surface font-label-sm text-label-sm uppercase rounded backdrop-blur-sm">Maqueta</span>
+                  <span class="px-2.5 py-0.5 bg-secondary text-on-secondary font-label-sm text-label-sm uppercase rounded">Instalación Urbana</span>
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col gap-2 flex-1 justify-between">
+                <div class="flex flex-col gap-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Wave</h3>
+                  <p class="font-body-sm text-on-surface-variant flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[16px] text-primary">architecture</span>
+                    Instalación Conceptual • Pasarela & Espacio Público
+                  </p>
+                  <p class="font-body-md text-body-md text-on-surface-variant font-light mt-1">
+                    Maqueta física y exploración morfológica de un elemento de conexión peatonal con curvatura orgánica en madera y gradas de descanso.
+                  </p>
+                </div>
+                <button class="w-full mt-3 py-2 px-3 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm uppercase rounded flex items-center justify-center gap-1 transition-colors open-modal-btn" data-project="wave">
+                  <span>Ver Ficha Técnica</span>
+                  <span class="material-symbols-outlined text-[16px]">info</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Project 9: Plan Maestro Soria, Gto. -->
+            <div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-surface-container hover:shadow-md transition-all group" data-category="conceptual">
+              <div class="relative w-full h-60 bg-surface-container overflow-hidden cursor-pointer open-modal-btn" data-project="plan-maestro-soria">
+                <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                     alt="Plan Maestro Soria, Guanajuato — Paulina Barba" 
+                     src="./images/paulina/plan_maestro_soria.jpg"/>
+                <div class="absolute top-2 right-2 flex gap-1">
+                  <span class="px-2.5 py-0.5 bg-surface-container-highest/90 text-on-surface font-label-sm text-label-sm uppercase rounded backdrop-blur-sm">Urbanismo</span>
+                  <span class="px-2.5 py-0.5 bg-primary text-on-primary font-label-sm text-label-sm uppercase rounded">Plan Maestro</span>
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col gap-2 flex-1 justify-between">
+                <div class="flex flex-col gap-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Plan Maestro Soria</h3>
+                  <p class="font-body-sm text-on-surface-variant flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[16px] text-primary">map</span>
+                    Guanajuato • Urbanismo, Paisajismo & Masterplan
+                  </p>
+                  <p class="font-body-md text-body-md text-on-surface-variant font-light mt-1">
+                    Plan maestro territorial con integración de manzanas habitacionales bioclimáticas, parque lineal ribereño y corredores verdes peatonales.
+                  </p>
+                </div>
+                <button class="w-full mt-3 py-2 px-3 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm uppercase rounded flex items-center justify-center gap-1 transition-colors open-modal-btn" data-project="plan-maestro-soria">
+                  <span>Ver Ficha Técnica</span>
+                  <span class="material-symbols-outlined text-[16px]">info</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= 4. CURRICULUM VITAE DE PAULINA BARBA ================= -->
+      <section class="py-space-xl max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet flex flex-col gap-space-md" id="cv">
+        
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+          <div class="flex flex-col gap-1 max-w-2xl">
+            <span class="font-label-sm text-label-sm uppercase text-primary tracking-widest font-semibold">Curriculum Vitae</span>
+            <h2 class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-on-surface font-serif-quote">
+              Experiencia, Educación & Habilidades
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant font-light">
+              Perfil profesional de la Arq. Paulina Barba Martín con trayectoria en despachos de Jalisco, obra residencial y colaboración internacional.
+            </p>
+          </div>
+
+          <div class="flex gap-2">
+            <button onclick="window.print()" class="px-4 py-2 bg-surface-container-lowest text-on-surface border border-surface-container rounded-md font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-2 hover:bg-surface-container transition-colors shadow-sm">
+              <span class="material-symbols-outlined text-[18px] text-primary">picture_as_pdf</span>
+              <span>Imprimir / Guardar CV en PDF</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- CV Interactive Tabs -->
+        <div class="flex gap-2 overflow-x-auto pb-1 no-scrollbar" id="cv-tabs">
+          <button class="px-4 py-2 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider rounded-md cv-tab-btn active-cv-tab" data-cv="experiencia">
+            Experiencia Laboral
+          </button>
+          <button class="px-4 py-2 bg-surface-container-highest text-on-surface font-label-sm text-label-sm uppercase tracking-wider rounded-md cv-tab-btn" data-cv="educacion">
+            Educación & Certificaciones
+          </button>
+          <button class="px-4 py-2 bg-surface-container-highest text-on-surface font-label-sm text-label-sm uppercase tracking-wider rounded-md cv-tab-btn" data-cv="habilidades">
+            Habilidades & Software
+          </button>
+        </div>
+
+        <!-- CV Tab 1: Experiencia -->
+        <div id="cv-experiencia" class="cv-panel flex flex-col gap-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            
+            <!-- Paralelo.36 -->
+            <div class="p-space-md bg-surface-container-lowest rounded-xl border border-surface-container shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between text-primary font-label-sm text-label-sm uppercase font-semibold">
+                  <span>2025 — Presente</span>
+                  <span class="px-2 py-0.5 bg-primary/10 rounded">Tepatitlán</span>
+                </div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface mt-1">Paralelo.36</h4>
+                <p class="font-label-md text-on-surface-variant font-medium">Diseño, Dibujo Ejecutivo & Licencias</p>
+                <p class="font-body-sm text-on-surface-variant mt-2 font-light">
+                  Diseño, dibujo ejecutivo y coordinación de proyectos residenciales y comerciales en Tepatitlán, Jalisco. Encargada directa del área de tramitología municipal y licencias de construcción.
+                </p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-surface-container text-label-sm text-secondary uppercase">
+                ✓ Coordinación integral de proyecto
+              </div>
+            </div>
+
+            <!-- Arquitectos, Plural -->
+            <div class="p-space-md bg-surface-container-lowest rounded-xl border border-surface-container shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between text-primary font-label-sm text-label-sm uppercase font-semibold">
+                  <span>2023 — 2024</span>
+                  <span class="px-2 py-0.5 bg-primary/10 rounded">Guadalajara</span>
+                </div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface mt-1">Arquitectos, Plural</h4>
+                <p class="font-label-md text-on-surface-variant font-medium">Co-fundadora & Residente de Obra</p>
+                <p class="font-body-sm text-on-surface-variant mt-2 font-light">
+                  Diseño, dibujo ejecutivo y coordinación de proyectos de vivienda vertical y edificios de uso mixto en Jalisco. Residente de obra encargada de revisión de material, estimaciones y entrega final a clientes.
+                </p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-surface-container text-label-sm text-secondary uppercase">
+                ✓ Residencia de obra & estimaciones
+              </div>
+            </div>
+
+            <!-- Consenza Desarrollos -->
+            <div class="p-space-md bg-surface-container-lowest rounded-xl border border-surface-container shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between text-primary font-label-sm text-label-sm uppercase font-semibold">
+                  <span>2022 — 2024</span>
+                  <span class="px-2 py-0.5 bg-surface-container-high rounded">Guadalajara</span>
+                </div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface mt-1">Consenza Desarrollos</h4>
+                <p class="font-label-md text-on-surface-variant font-medium">Líder de Equipo de Dibujo</p>
+                <p class="font-body-sm text-on-surface-variant mt-2 font-light">
+                  Encargada del equipo de dibujo para planos ejecutivos de bodegas industriales, oficinas y parques industriales. Revisión de avance de obra y generación de reportes ejecutivos a clientes.
+                </p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-surface-container text-label-sm text-secondary uppercase">
+                ✓ Proyectos industriales & bodegas
+              </div>
+            </div>
+
+            <!-- UpWork Internacional -->
+            <div class="p-space-md bg-surface-container-lowest rounded-xl border border-surface-container shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between text-primary font-label-sm text-label-sm uppercase font-semibold">
+                  <span>2021 — 2022</span>
+                  <span class="px-2 py-0.5 bg-surface-container-high rounded">Internacional</span>
+                </div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface mt-1">UpWork Freelance</h4>
+                <p class="font-label-md text-on-surface-variant font-medium">Nueva York, Australia & Bulgaria</p>
+                <p class="font-body-sm text-on-surface-variant mt-2 font-light">
+                  Diseño y creación de renders y planos ejecutivos para proyectos de remodelación residencial en Nueva York y Australia. Desarrollo de cursos de diseño de interiores en Bulgaria.
+                </p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-surface-container text-label-sm text-secondary uppercase">
+                ✓ Colaboración en inglés con clientes globales
+              </div>
+            </div>
+
+            <!-- Cuadro Arquitectos -->
+            <div class="p-space-md bg-surface-container-lowest rounded-xl border border-surface-container shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between text-primary font-label-sm text-label-sm uppercase font-semibold">
+                  <span>2019 — 2020</span>
+                  <span class="px-2 py-0.5 bg-surface-container-high rounded">Guadalajara</span>
+                </div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface mt-1">Cuadro Arquitectos</h4>
+                <p class="font-label-md text-on-surface-variant font-medium">Representación Técnica & Expresiva</p>
+                <p class="font-body-sm text-on-surface-variant mt-2 font-light">
+                  Representación técnica y expresiva de proyectos arquitectónicos trabajando con planimetría en Photoshop y modelado tridimensional en SketchUp.
+                </p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-surface-container text-label-sm text-secondary uppercase">
+                ✓ Expresión gráfica de proyectos
+              </div>
+            </div>
+
+            <!-- Nota Studio -->
+            <div class="p-space-md bg-surface-container-lowest rounded-xl border border-surface-container shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between text-primary font-label-sm text-label-sm uppercase font-semibold">
+                  <span>2019</span>
+                  <span class="px-2 py-0.5 bg-surface-container-high rounded">Tepatitlán</span>
+                </div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface mt-1">Nota Studio</h4>
+                <p class="font-label-md text-on-surface-variant font-medium">Diseño & Ejecución de Interiores</p>
+                <p class="font-body-sm text-on-surface-variant mt-2 font-light">
+                  Diseño, renderizado, cotización y ejecución de interiores para casas habitación, restaurantes y locales comerciales en la región de los Altos de Jalisco.
+                </p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-surface-container text-label-sm text-secondary uppercase">
+                ✓ Interiorismo comercial & residencial
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CV Tab 2: Educación -->
+        <div id="cv-educacion" class="cv-panel hidden flex flex-col gap-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            
+            <div class="p-space-md bg-surface-container-lowest rounded-xl border border-surface-container shadow-sm flex items-start gap-4">
+              <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+                <span class="material-symbols-outlined text-[26px]">school</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-label-sm text-label-sm text-primary uppercase font-semibold">2017 — 2022</span>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface">Licenciatura en Arquitectura</h4>
+                <p class="font-body-sm text-on-surface-variant font-medium">ITESO — Instituto Tecnológico y de Estudios Superiores de Occidente</p>
+                <p class="font-body-sm text-on-surface-variant font-light mt-1">
+                  Formación integral jesuita enfocada en diseño arquitectónico, urbanismo, estructuras, restauración y sensibilidad social hacia el hábitat.
+                </p>
+              </div>
+            </div>
+
+            <div class="p-space-md bg-surface-container-lowest rounded-xl border border-surface-container shadow-sm flex items-start gap-4">
+              <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+                <span class="material-symbols-outlined text-[26px]">history_edu</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-label-sm text-label-sm text-primary uppercase font-semibold">Septiembre 2021</span>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface">The Architectural Imagination</h4>
+                <p class="font-body-sm text-on-surface-variant font-medium">Harvard University / edX</p>
+                <p class="font-body-sm text-on-surface-variant font-light mt-1">
+                  Estudio del pensamiento arquitectónico a través de la historia, análisis tipológico y la arquitectura como expresión cultural.
+                </p>
+              </div>
+            </div>
+
+            <div class="p-space-md bg-surface-container-lowest rounded-xl border border-surface-container shadow-sm flex items-start gap-4">
+              <div class="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary flex-shrink-0">
+                <span class="material-symbols-outlined text-[26px]">chair</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-label-sm text-label-sm text-primary uppercase font-semibold">Abril 2023</span>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface">Diseño de Interiores</h4>
+                <p class="font-body-sm text-on-surface-variant font-medium">Nook Architects</p>
+                <p class="font-body-sm text-on-surface-variant font-light mt-1">
+                  Selección de paletas matéricas, diseño de carpintería a medida, ergonomía e iluminación de calidez residencial.
+                </p>
+              </div>
+            </div>
+
+            <div class="p-space-md bg-surface-container-lowest rounded-xl border border-surface-container shadow-sm flex items-start gap-4">
+              <div class="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary flex-shrink-0">
+                <span class="material-symbols-outlined text-[26px]">movie</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-label-sm text-label-sm text-primary uppercase font-semibold">Agosto 2024</span>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface">Taller de Stop Motion & Rotoscopia</h4>
+                <p class="font-body-sm text-on-surface-variant font-medium">CAAV — Universidad de Medios Audiovisuales</p>
+                <p class="font-body-sm text-on-surface-variant font-light mt-1">
+                  Animación fotograma a fotograma y rotoscopia que nutren la sensibilidad plástica del dibujo y la representación espacial.
+                </p>
+              </div>
+            </div>
+
+            <div class="p-space-md bg-surface-container-lowest rounded-xl border border-surface-container shadow-sm flex items-start gap-4 col-span-1 md:col-span-2">
+              <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+                <span class="material-symbols-outlined text-[26px]">view_in_ar</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-label-sm text-label-sm text-primary uppercase font-semibold">Julio 2023</span>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface">Visualización Arquitectónica Fotorrealista</h4>
+                <p class="font-body-sm text-on-surface-variant font-medium">Amaranto Arquitectura</p>
+                <p class="font-body-sm text-on-surface-variant font-light mt-1">
+                  Técnicas avanzadas de iluminación artificial y solar con VRay y Photoshop para renders de alta fidelidad.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CV Tab 3: Habilidades & Software -->
+        <div id="cv-habilidades" class="cv-panel hidden flex flex-col gap-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            
+            <div class="p-space-md bg-surface-container-lowest rounded-xl border border-surface-container shadow-sm flex flex-col gap-3">
+              <div class="flex justify-between items-center">
+                <span class="font-headline-sm text-headline-sm text-primary font-bold">AutoCAD</span>
+                <span class="font-label-sm text-label-sm uppercase font-semibold text-primary">Predilecto</span>
+              </div>
+              <div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+                <div class="bg-primary h-full w-[92%] rounded-full"></div>
+              </div>
+              <p class="font-body-sm text-on-surface-variant font-light">
+                Planos ejecutivos, axonométricos, memorias de carpintería y detalles de herrería al milímetro.
+              </p>
+            </div>
+
+            <div class="p-space-md bg-surface-container-lowest rounded-xl border border-surface-container shadow-sm flex flex-col gap-3">
+              <div class="flex justify-between items-center">
+                <span class="font-headline-sm text-headline-sm text-primary font-bold">SketchUp & VRay</span>
+                <span class="font-label-sm text-label-sm uppercase font-semibold text-primary">Avanzado</span>
+              </div>
+              <div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+                <div class="bg-primary h-full w-[85%] rounded-full"></div>
+              </div>
+              <p class="font-body-sm text-on-surface-variant font-light">
+                Modelado tridimensional rápido, exploración volumétrica, maquetas digitales y renders fotorrealistas.
+              </p>
+            </div>
+
+            <div class="p-space-md bg-surface-container-lowest rounded-xl border border-surface-container shadow-sm flex flex-col gap-3">
+              <div class="flex justify-between items-center">
+                <span class="font-headline-sm text-headline-sm text-primary font-bold">Adobe Creative</span>
+                <span class="font-label-sm text-label-sm uppercase font-semibold text-primary">Avanzado</span>
+              </div>
+              <div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+                <div class="bg-primary h-full w-[85%] rounded-full"></div>
+              </div>
+              <p class="font-body-sm text-on-surface-variant font-light">
+                Photoshop, Illustrator e InDesign para postproducción gráfica, láminas de concurso y rotoscopia artística.
+              </p>
+            </div>
+
+            <div class="p-space-md bg-surface-container-lowest rounded-xl border border-surface-container shadow-sm flex flex-col gap-3">
+              <div class="flex justify-between items-center">
+                <span class="font-headline-sm text-headline-sm text-primary font-bold">Neodata & Obra</span>
+                <span class="font-label-sm text-label-sm uppercase font-semibold text-primary">Profesional</span>
+              </div>
+              <div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+                <div class="bg-primary h-full w-[75%] rounded-full"></div>
+              </div>
+              <p class="font-body-sm text-on-surface-variant font-light">
+                Precios unitarios, tarjetas de costo, estimaciones semanales de obra y control presupuestario riguroso.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ================= 5. SECCIÓN ESPECIAL: ESCALAS CAD ================= -->
+      <section class="py-space-xl bg-surface-container-low border-y border-surface-container" id="escalas-cad">
+        <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet flex flex-col items-center text-center gap-space-md">
+          
+          <div class="flex flex-col gap-1 max-w-xl">
+            <span class="font-label-sm text-label-sm uppercase text-primary tracking-widest font-semibold">Recursos de Dibujo</span>
+            <h2 class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-on-surface font-serif-quote">
+              Escalas CAD Dibujadas a Mano
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant font-light">
+              Figuras humanas dibujadas vectorialmente por Paulina Barba para ambientar planos, cortes y axonométricos con calidez y proporción real.
+            </p>
+          </div>
+
+          <div class="max-w-md w-full bg-surface-container-lowest p-6 rounded-2xl border border-surface-container shadow-sm flex flex-col items-center gap-4">
+            <img class="w-full h-auto object-contain max-h-48" alt="Escalas humanas en CAD dibujadas por Paulina Barba" src="./images/paulina/escalas_cad.jpg"/>
+            <div class="flex flex-col gap-1 text-center">
+              <span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Bloques de Escala Humana (.DWG)</span>
+              <span class="font-body-sm text-on-surface-variant font-light">Listas para insertar en cualquier versión de AutoCAD</span>
+            </div>
+            <a href="https://wa.me/523781425739?text=Hola%20Paulina,%20vi%20tu%20sitio%20web%20y%20me%20gustar%C3%ADa%20obtener%20el%20archivo%20de%20Escalas%20CAD" target="_blank" rel="noopener" class="w-full py-2.5 px-4 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider rounded-xl flex items-center justify-center gap-2 hover:bg-primary-container transition-colors shadow-sm">
+              <span class="material-symbols-outlined text-[18px]">download</span>
+              <span>Solicitar Descarga de Escalas CAD</span>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= 6. PLANIFICADOR DE PROYECTOS & COTIZADOR (WHATSAPP DIRECTO) ================= -->
+      <section class="py-space-xl bg-surface-container-high border-y border-surface-container" id="diagnostico">
+        <div class="max-w-4xl mx-auto px-margin-mobile md:px-margin-tablet flex flex-col gap-space-md">
+          
+          <div class="flex flex-col gap-1 text-center items-center">
+            <span class="font-label-sm text-label-sm uppercase text-primary tracking-widest font-semibold">Planificador de Proyectos</span>
+            <h2 class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-on-surface font-serif-quote">
+              Cotiza tu Proyecto con Paulina
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant font-light max-w-xl">
+              Selecciona los parámetros de tu obra o remodelación y recibe un diagnóstico preliminar con estimación de costos en menos de 48 horas.
+            </p>
+          </div>
+
+          <!-- Multi-step Form Container -->
+          <div class="bg-surface-container-lowest p-space-md sm:p-8 rounded-2xl shadow-md border border-surface-container flex flex-col gap-space-md">
+            
+            <!-- Progress Bar -->
+            <div class="flex flex-col gap-1.5">
+              <div class="flex justify-between items-center">
+                <span class="font-label-sm text-label-sm uppercase text-primary font-semibold" id="step-indicator">Paso 1 de 4</span>
+                <span class="font-label-sm text-label-sm uppercase text-on-surface-variant" id="step-name">Tipología</span>
+              </div>
+              <div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+                <div class="bg-primary h-full w-1/4 transition-all duration-300 rounded-full" id="progress-bar"></div>
+              </div>
+            </div>
+
+            <!-- Step 1: Type Selection -->
+            <div class="flex flex-col gap-space-sm" id="step-1-content">
+              <label class="font-headline-sm text-headline-sm text-on-surface font-semibold">¿Qué tipo de proyecto deseas realizar?</label>
+              <div class="flex flex-col gap-2.5">
+                <button class="opt-type p-4 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-xl flex items-center justify-between transition-colors text-left border border-transparent hover:border-primary/30 active:scale-[0.99]" data-val="Obra Nueva Residencial" type="button">
+                  <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-[24px]">house</span>
+                    <span class="font-body-md text-body-md font-medium">Obra Nueva Residencial (Casa Habitación)</span>
+                  </div>
+                  <span class="material-symbols-outlined text-[20px] text-primary">chevron_right</span>
+                </button>
+                <button class="opt-type p-4 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-xl flex items-center justify-between transition-colors text-left border border-transparent hover:border-primary/30 active:scale-[0.99]" data-val="Remodelación o Ampliación" type="button">
+                  <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-[24px]">architecture</span>
+                    <span class="font-body-md text-body-md font-medium">Remodelación, Restauración o Ampliación</span>
+                  </div>
+                  <span class="material-symbols-outlined text-[20px] text-primary">chevron_right</span>
+                </button>
+                <button class="opt-type p-4 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-xl flex items-center justify-between transition-colors text-left border border-transparent hover:border-primary/30 active:scale-[0.99]" data-val="Interiorismo & Carpinterías" type="button">
+                  <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-[24px]">chair</span>
+                    <span class="font-body-md text-body-md font-medium">Diseño de Interiores & Planos de Carpinterías</span>
+                  </div>
+                  <span class="material-symbols-outlined text-[20px] text-primary">chevron_right</span>
+                </button>
+                <button class="opt-type p-4 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-xl flex items-center justify-between transition-colors text-left border border-transparent hover:border-primary/30 active:scale-[0.99]" data-val="Nave Industrial o Comercial" type="button">
+                  <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-[24px]">warehouse</span>
+                    <span class="font-body-md text-body-md font-medium">Nave Industrial, Bodega o Local Comercial</span>
+                  </div>
+                  <span class="material-symbols-outlined text-[20px] text-primary">chevron_right</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Surface & Location -->
+            <div class="hidden flex flex-col gap-space-sm" id="step-2-content">
+              <label class="font-headline-sm text-headline-sm text-on-surface font-semibold">Superficie estimada y Ubicación</label>
+              <p class="font-body-sm text-body-sm text-on-surface-variant font-light">Metraje aproximado a intervenir:</p>
+              
+              <div class="grid grid-cols-3 gap-2 sm:gap-3">
+                <button class="opt-size p-3.5 bg-surface-container-low rounded-xl font-label-sm text-label-sm uppercase text-center border border-transparent hover:border-primary/40 active:bg-primary active:text-on-primary transition-colors" data-size="Hasta 120 m²" type="button">Hasta 120 m²</button>
+                <button class="opt-size p-3.5 bg-surface-container-low rounded-xl font-label-sm text-label-sm uppercase text-center border border-transparent hover:border-primary/40 active:bg-primary active:text-on-primary transition-colors" data-size="120 — 300 m²" type="button">120 — 300 m²</button>
+                <button class="opt-size p-3.5 bg-surface-container-low rounded-xl font-label-sm text-label-sm uppercase text-center border border-transparent hover:border-primary/40 active:bg-primary active:text-on-primary transition-colors" data-size="+300 m²" type="button">+300 m²</button>
+              </div>
+
+              <div class="flex flex-col gap-1.5 mt-space-xs">
+                <label class="font-label-sm text-label-sm uppercase text-on-surface-variant font-semibold">Municipio o Ciudad del Proyecto</label>
+                <input class="w-full h-12 px-4 bg-surface-container-low text-on-surface rounded-xl font-body-md text-body-md border border-surface-container focus:outline-none focus:border-primary" id="input-loc" placeholder="Ej. Tepatitlán, Guadalajara, Zapopan..." type="text"/>
+              </div>
+
+              <div class="flex justify-between items-center gap-3 mt-2">
+                <button class="h-11 px-4 text-on-surface-variant font-label-md text-label-md uppercase tracking-wider" id="btn-prev-2" type="button">
+                  ← Volver
+                </button>
+                <button class="h-12 px-6 bg-primary text-on-primary rounded-xl font-label-md text-label-md uppercase tracking-wider hover:bg-primary-container transition-colors shadow-sm" id="btn-next-2" type="button">
+                  Continuar
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 3: Budget Range (MXN) -->
+            <div class="hidden flex flex-col gap-space-sm" id="step-3-content">
+              <label class="font-headline-sm text-headline-sm text-on-surface font-semibold">Rango de inversión previsto</label>
+              <p class="font-body-sm text-body-sm text-on-surface-variant font-light">Para dimensionar los materiales, acabados y alcance del anteproyecto:</p>
+              
+              <div class="flex flex-col gap-2.5">
+                <button class="opt-budget p-4 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-xl flex items-center justify-between border border-transparent hover:border-primary/30 transition-colors" data-budget="$800,000 – $1,800,000 MXN" type="button">
+                  <span class="font-body-md text-body-md font-medium">$800,000 – $1,800,000 MXN</span>
+                  <span class="material-symbols-outlined text-[20px] text-primary">check_circle</span>
+                </button>
+                <button class="opt-budget p-4 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-xl flex items-center justify-between border border-transparent hover:border-primary/30 transition-colors" data-budget="$1,800,000 – $3,500,000 MXN" type="button">
+                  <span class="font-body-md text-body-md font-medium">$1,800,000 – $3,500,000 MXN</span>
+                  <span class="material-symbols-outlined text-[20px] text-primary">check_circle</span>
+                </button>
+                <button class="opt-budget p-4 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-xl flex items-center justify-between border border-transparent hover:border-primary/30 transition-colors" data-budget="+$3,500,000 MXN" type="button">
+                  <span class="font-body-md text-body-md font-medium">+$3,500,000 MXN</span>
+                  <span class="material-symbols-outlined text-[20px] text-primary">check_circle</span>
+                </button>
+              </div>
+
+              <div class="flex justify-between items-center gap-3 mt-2">
+                <button class="h-11 px-4 text-on-surface-variant font-label-md text-label-md uppercase tracking-wider" id="btn-prev-3" type="button">
+                  ← Volver
+                </button>
+                <button class="h-12 px-6 bg-primary text-on-primary rounded-xl font-label-md text-label-md uppercase tracking-wider hover:bg-primary-container transition-colors shadow-sm" id="btn-next-3" type="button">
+                  Continuar
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 4: Contact & Final Submit -->
+            <form class="hidden flex flex-col gap-space-xs" id="step-4-content">
+              <label class="font-headline-sm text-headline-sm text-on-surface font-semibold">Tus Datos de Contacto</label>
+              <p class="font-body-sm text-body-sm text-on-surface-variant font-light mb-2">Para coordinar la primera sesión de diagnóstico con Paulina:</p>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div class="flex flex-col gap-1">
+                  <label class="font-label-sm text-label-sm uppercase text-on-surface-variant font-semibold">Nombre Completo *</label>
+                  <input class="w-full h-12 px-3.5 bg-surface-container-low text-on-surface rounded-xl font-body-md text-body-md border border-surface-container focus:outline-none focus:border-primary" id="client-name" placeholder="Ej. Roberto Franco" required type="text"/>
+                </div>
+
+                <div class="flex flex-col gap-1">
+                  <label class="font-label-sm text-label-sm uppercase text-on-surface-variant font-semibold">Email de Contacto *</label>
+                  <input class="w-full h-12 px-3.5 bg-surface-container-low text-on-surface rounded-xl font-body-md text-body-md border border-surface-container focus:outline-none focus:border-primary" id="client-email" placeholder="roberto@ejemplo.com" required type="email"/>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-1 mt-2">
+                <label class="font-label-sm text-label-sm uppercase text-on-surface-variant font-semibold">Teléfono / WhatsApp *</label>
+                <input class="w-full h-12 px-3.5 bg-surface-container-low text-on-surface rounded-xl font-body-md text-body-md border border-surface-container focus:outline-none focus:border-primary" id="client-phone" placeholder="+52 33 0000 0000" required type="tel"/>
+              </div>
+
+              <div class="flex flex-col gap-1 mt-2">
+                <label class="font-label-sm text-label-sm uppercase text-on-surface-variant font-semibold">Detalles adicionales del terreno o propiedad</label>
+                <textarea class="w-full p-3.5 bg-surface-container-low text-on-surface rounded-xl font-body-md text-body-md border border-surface-container focus:outline-none focus:border-primary" id="client-notes" placeholder="¿Cuentas con escrituras, plano topográfico o fecha límite para iniciar la obra?" rows="2"></textarea>
+              </div>
+
+              <div class="flex justify-between items-center gap-3 mt-4">
+                <button class="h-11 px-4 text-on-surface-variant font-label-md text-label-md uppercase tracking-wider" id="btn-prev-4" type="button">
+                  ← Volver
+                </button>
+                <button class="h-12 px-6 bg-primary text-on-primary rounded-xl font-label-md text-label-md uppercase tracking-wider shadow-md hover:bg-primary-container transition-colors flex-1" type="submit">
+                  Solicitar Diagnóstico
+                </button>
+              </div>
+            </form>
+
+            <!-- Step Success State with Direct WhatsApp -->
+            <div class="hidden flex flex-col items-center text-center py-6 gap-3" id="step-success">
+              <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-[36px]">task_alt</span>
+              </div>
+              <h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Diagnóstico Registrado</h4>
+              <p class="font-body-md text-body-md text-on-surface-variant font-light max-w-lg">
+                La Arq. Paulina Barba evaluará la viabilidad de tu proyecto y se comunicará contigo directamente por WhatsApp o llamada en menos de <strong>48 horas</strong>.
+              </p>
+
+              <div class="pt-3 w-full flex flex-col sm:flex-row justify-center gap-3">
+                <a id="whatsapp-direct-link" href="#" target="_blank" rel="noopener" class="px-6 py-3 bg-[#25D366] text-white rounded-xl font-label-md text-label-md uppercase tracking-wider font-semibold flex items-center justify-center gap-2 shadow hover:opacity-95 transition-opacity">
+                  <span class="material-symbols-outlined text-[20px]">chat</span>
+                  <span>Enviar Diagnóstico por WhatsApp Inmediato</span>
+                </a>
+                <button onclick="location.reload()" class="px-5 py-3 bg-surface-container text-on-surface rounded-xl font-label-sm text-label-sm uppercase tracking-wider">
+                  Nuevo Proyecto
+                </button>
+              </div>
+            </div>
+
+            <!-- Guarantee footer -->
+            <div class="p-3 bg-surface-container-low rounded-lg flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+              <span class="material-symbols-outlined text-[18px] text-secondary">lock</span>
+              <span>Trato confidencial y directo con la Arq. Paulina Barba. Sin intermediarios.</span>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= 7. FOOTER & CONTACT ================= -->
+      <footer class="py-space-xl bg-inverse-surface text-inverse-on-surface border-t border-inverse-surface/20" id="contacto">
+        <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet flex flex-col gap-space-lg">
+          
+          <!-- Call to action card inside footer -->
+          <div class="p-space-md sm:p-8 bg-surface-container-highest/10 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 backdrop-blur-sm border border-white/10">
+            <div class="flex flex-col gap-2 max-w-xl">
+              <span class="font-label-sm text-label-sm uppercase text-inverse-primary tracking-widest font-semibold">Comencemos a proyectar</span>
+              <h3 class="font-headline-md md:font-headline-lg text-surface-bright font-serif-quote">¿Tienes un proyecto en mente en Jalisco?</h3>
+              <p class="font-body-md text-surface-variant font-light">
+                Contáctanos para revisar tu anteproyecto residencial, comercial o de interiorismo.
+              </p>
+            </div>
+            <a class="h-12 px-space-md bg-primary text-on-primary rounded-xl flex items-center justify-center gap-2 font-label-md text-label-md uppercase tracking-wider shadow-md hover:bg-primary-container transition-colors flex-shrink-0" href="https://wa.me/523781425739?text=Hola%20Paulina,%20quisiera%20agendar%20una%20reunión" target="_blank" rel="noopener">
+              <span>Agendar Reunión por WhatsApp</span>
+              <span class="material-symbols-outlined text-[18px]">north_east</span>
+            </a>
+          </div>
+
+          <!-- Studio Identity & Columns -->
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pt-4">
+            
+            <!-- Brand Column -->
+            <div class="md:col-span-4 flex flex-col gap-4">
+              <div class="flex items-center gap-3">
+                <img alt="Isotipo P Estudio Perspectiva" class="h-10 w-auto object-contain" src="./EstudioP2.jpeg"/>
+                <div class="flex flex-col">
+                  <span class="font-display-lg-mobile text-[22px] tracking-tight text-surface-bright leading-none uppercase font-serif-quote">Estudio Perspectiva</span>
+                  <span class="font-label-sm text-label-sm uppercase text-inverse-primary tracking-wider mt-0.5">Arq. Paulina Barba Martín</span>
+                </div>
+              </div>
+              <p class="font-body-sm text-surface-variant font-light">
+                Taller de arquitectura, dibujo ejecutivo de planos de carpintería y dirección facultativa de obra en Tepatitlán y Guadalajara, Jalisco.
+              </p>
+              <div class="flex gap-4 text-surface-variant font-label-sm text-label-sm uppercase">
+                <span>ITESO Arquitectura</span>
+                <span>•</span>
+                <span>Harvard edX</span>
+              </div>
+            </div>
+
+            <!-- Directory & Location -->
+            <div class="md:col-span-4 flex flex-col gap-3">
+              <span class="font-label-sm text-label-sm uppercase text-inverse-primary tracking-widest font-semibold">Contacto Directo</span>
+              <div class="flex items-start gap-2 text-surface-variant font-body-sm">
+                <span class="material-symbols-outlined text-inverse-primary text-[20px] mt-0.5">location_on</span>
+                <span>Tepatitlán de Morelos & Guadalajara, Jalisco, México</span>
+              </div>
+              <div class="flex items-center gap-2 font-body-sm">
+                <span class="material-symbols-outlined text-inverse-primary text-[20px]">call</span>
+                <a class="text-surface-bright hover:text-inverse-primary transition-colors" href="tel:+523781425739">+52 378 142 5739</a>
+              </div>
+              <div class="flex items-center gap-2 font-body-sm">
+                <span class="material-symbols-outlined text-inverse-primary text-[20px]">mail</span>
+                <a class="text-surface-bright hover:text-inverse-primary transition-colors" href="mailto:paulinabarba4@gmail.com">paulinabarba4@gmail.com</a>
+              </div>
+              <div class="flex items-center gap-2 font-body-sm">
+                <span class="material-symbols-outlined text-inverse-primary text-[20px]">photo_camera</span>
+                <a class="text-surface-bright hover:text-inverse-primary transition-colors" href="https://www.instagram.com/estudioperspectiva.mx/" target="_blank" rel="noopener">@estudioperspectiva.mx</a>
+              </div>
+            </div>
+
+            <!-- Editorial Links & Navigation -->
+            <div class="md:col-span-4 flex flex-col gap-3">
+              <span class="font-label-sm text-label-sm uppercase text-inverse-primary tracking-widest font-semibold">Enlaces Rápidos</span>
+              <div class="flex flex-col gap-2 font-body-sm text-surface-variant">
+                <a href="#proyectos" class="hover:text-surface-bright transition-colors">Portafolio de Obras</a>
+                <a href="#perfil" class="hover:text-surface-bright transition-colors">Acerca de Paulina Barba</a>
+                <a href="#cv" class="hover:text-surface-bright transition-colors">Curriculum Vitae Profesional</a>
+                <a href="#escalas-cad" class="hover:text-surface-bright transition-colors">Escalas CAD para AutoCAD</a>
+                <a href="https://sites.google.com/view/paulinabarba/home" target="_blank" rel="noopener" class="hover:text-surface-bright transition-colors flex items-center gap-1">
+                  <span>Google Sites Original</span><span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Copyright -->
+          <div class="pt-space-sm border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-2 text-surface-dim font-label-sm text-label-sm uppercase tracking-wider">
+            <span>© 2025 Arq. Paulina Barba Martín • Estudio Perspectiva</span>
+            <div class="flex gap-4 text-surface-variant">
+              <a class="hover:underline" href="#">Tepatitlán</a>
+              <a class="hover:underline" href="#">Guadalajara</a>
+              <a class="hover:underline" href="#">Jalisco, México</a>
+            </div>
+          </div>
+
+        </div>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- ================= MOBILE FIXED BOTTOM NAVIGATION ================= -->
+  <nav class="md:hidden fixed bottom-0 w-full z-50 pb-safe bg-surface/95 backdrop-blur-xl border-t border-surface-container shadow-[0_-1px_12px_rgba(0,0,0,0.06)]">
+    <div class="flex justify-around items-center h-16 px-space-xs max-w-lg mx-auto">
+      <a class="flex flex-col items-center justify-center w-14 h-14 transition-colors text-primary font-medium" href="#inicio">
+        <span class="material-symbols-outlined text-[20px]">apartment</span>
+        <span class="font-label-sm text-label-sm uppercase tracking-wider mt-0.5">Inicio</span>
+      </a>
+      <a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant transition-colors hover:text-on-surface" href="#proyectos">
+        <span class="material-symbols-outlined text-[20px]">grid_view</span>
+        <span class="font-label-sm text-label-sm uppercase tracking-wider mt-0.5">Obras</span>
+      </a>
+      <a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant transition-colors hover:text-on-surface" href="#cv">
+        <span class="material-symbols-outlined text-[20px]">badge</span>
+        <span class="font-label-sm text-label-sm uppercase tracking-wider mt-0.5">CV</span>
+      </a>
+      <a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant transition-colors hover:text-on-surface" href="#escalas-cad">
+        <span class="material-symbols-outlined text-[20px]">draw</span>
+        <span class="font-label-sm text-label-sm uppercase tracking-wider mt-0.5">CAD</span>
+      </a>
+      <a class="flex flex-col items-center justify-center w-14 h-14 text-on-surface-variant transition-colors hover:text-on-surface" href="#contacto">
+        <span class="material-symbols-outlined text-[20px]">mail</span>
+        <span class="font-label-sm text-label-sm uppercase tracking-wider mt-0.5">Contacto</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ================= PROJECT DETAIL MODAL / LIGHTBOX ================= -->
+  <div id="project-modal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="bg-surface max-w-3xl w-full max-h-[90vh] rounded-2xl overflow-hidden shadow-2xl flex flex-col border border-surface-container">
+      
+      <div class="relative w-full h-64 sm:h-80 bg-surface-container flex-shrink-0">
+        <img id="modal-img" class="w-full h-full object-cover" src="" alt=""/>
+        <button id="close-modal-btn" aria-label="Cerrar" class="absolute top-4 right-4 w-10 h-10 bg-black/60 hover:bg-black/80 text-white rounded-full flex items-center justify-center transition-colors">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+        <span id="modal-badge" class="absolute bottom-4 left-4 px-3 py-1 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider rounded-md shadow"></span>
+      </div>
+
+      <div class="p-6 overflow-y-auto flex flex-col gap-4">
+        <div class="flex flex-col">
+          <h3 id="modal-title" class="font-headline-md text-headline-md text-on-surface font-serif-quote"></h3>
+          <p id="modal-subtitle" class="font-body-sm text-body-sm text-primary font-medium"></p>
+        </div>
+
+        <p id="modal-desc" class="font-body-md text-body-md text-on-surface-variant font-light"></p>
+
+        <!-- Technical Specs Table in Modal -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 py-2 border-y border-surface-container">
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Ubicación</span>
+            <span id="modal-location" class="font-body-sm font-semibold text-on-surface"></span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Tipología</span>
+            <span id="modal-type" class="font-body-sm font-semibold text-on-surface"></span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Especialidad</span>
+            <span id="modal-focus" class="font-body-sm font-semibold text-on-surface"></span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Diseño</span>
+            <span id="modal-author" class="font-body-sm font-semibold text-on-surface">Paulina Barba</span>
+          </div>
+        </div>
+
+        <div class="flex justify-end gap-3 pt-2">
+          <a href="#diagnostico" onclick="document.getElementById('project-modal').classList.add('hidden')" class="px-5 py-2.5 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider rounded-xl">
+            Cotizar Proyecto Similar
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= CLIENT-SIDE SCRIPT LOGIC ================= -->
+  <script>
+    // --- Mobile Drawer Toggle ---
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileDrawer = document.getElementById('mobile-drawer');
+    if (mobileMenuBtn && mobileDrawer) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileDrawer.classList.toggle('hidden');
+        mobileDrawer.classList.toggle('flex');
+      });
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileDrawer.classList.add('hidden');
+          mobileDrawer.classList.remove('flex');
+        });
+      });
+    }
+
+    // --- Filter Chips Toggle ---
+    document.querySelectorAll('#project-filters button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#project-filters button').forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary');
+          b.classList.add('bg-surface-container-highest', 'text-on-surface');
+        });
+        btn.classList.add('bg-primary', 'text-on-primary');
+        btn.classList.remove('bg-surface-container-highest', 'text-on-surface');
+        
+        const filter = btn.getAttribute('data-filter');
+        document.querySelectorAll('[data-category]').forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // --- CV Tabs Logic ---
+    const cvButtons = document.querySelectorAll('.cv-tab-btn');
+    cvButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        cvButtons.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary');
+          b.classList.add('bg-surface-container-highest', 'text-on-surface');
+        });
+        btn.classList.add('bg-primary', 'text-on-primary');
+        btn.classList.remove('bg-surface-container-highest', 'text-on-surface');
+
+        const targetId = 'cv-' + btn.getAttribute('data-cv');
+        document.querySelectorAll('.cv-panel').forEach(panel => {
+          panel.classList.add('hidden');
+        });
+        const targetPanel = document.getElementById(targetId);
+        if (targetPanel) {
+          targetPanel.classList.remove('hidden');
+        }
+      });
+    });
+
+    // --- Multi-step Interactive Wizard Logic & Data Storage ---
+    const diagnosticData = {
+      tipo: 'Obra Nueva Residencial',
+      superficie: '120 — 300 m²',
+      ubicacion: 'Tepatitlán / Jalisco',
+      presupuesto: '$1,800,000 – $3,500,000 MXN',
+      nombre: '',
+      email: '',
+      telefono: '',
+      notas: ''
+    };
+
+    const stepIndicator = document.getElementById('step-indicator');
+    const stepName = document.getElementById('step-name');
+    const progressBar = document.getElementById('progress-bar');
+    const step1 = document.getElementById('step-1-content');
+    const step2 = document.getElementById('step-2-content');
+    const step3 = document.getElementById('step-3-content');
+    const step4 = document.getElementById('step-4-content');
+    const stepSuccess = document.getElementById('step-success');
+
+    // Step 1 Click
+    document.querySelectorAll('.opt-type').forEach(b => {
+      b.addEventListener('click', () => {
+        diagnosticData.tipo = b.getAttribute('data-val');
+        step1.classList.add('hidden');
+        step2.classList.remove('hidden');
+        stepIndicator.textContent = 'Paso 2 de 4';
+        stepName.textContent = 'Superficie & Ubicación';
+        progressBar.style.width = '50%';
+      });
+    });
+
+    // Step 2 Size Buttons
+    document.querySelectorAll('.opt-size').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.opt-size').forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary');
+          b.classList.add('bg-surface-container-low', 'text-on-surface');
+        });
+        btn.classList.add('bg-primary', 'text-on-primary');
+        btn.classList.remove('bg-surface-container-low', 'text-on-surface');
+        diagnosticData.superficie = btn.getAttribute('data-size');
+      });
+    });
+
+    // Step 2 Navigation
+    document.getElementById('btn-prev-2').addEventListener('click', () => {
+      step2.classList.add('hidden');
+      step1.classList.remove('hidden');
+      stepIndicator.textContent = 'Paso 1 de 4';
+      stepName.textContent = 'Tipología';
+      progressBar.style.width = '25%';
+    });
+
+    document.getElementById('btn-next-2').addEventListener('click', () => {
+      const loc = document.getElementById('input-loc').value.trim();
+      if (loc) diagnosticData.ubicacion = loc;
+      step2.classList.add('hidden');
+      step3.classList.remove('hidden');
+      stepIndicator.textContent = 'Paso 3 de 4';
+      stepName.textContent = 'Inversión Prevista';
+      progressBar.style.width = '75%';
+    });
+
+    // Step 3 Budget Buttons
+    document.querySelectorAll('.opt-budget').forEach(b => {
+      b.addEventListener('click', () => {
+        document.querySelectorAll('.opt-budget').forEach(btn => {
+          btn.classList.remove('bg-primary', 'text-on-primary');
+          btn.classList.add('bg-surface-container-low', 'text-on-surface');
+        });
+        b.classList.add('bg-primary', 'text-on-primary');
+        b.classList.remove('bg-surface-container-low', 'text-on-surface');
+        diagnosticData.presupuesto = b.getAttribute('data-budget');
+      });
+    });
+
+    // Step 3 Navigation
+    document.getElementById('btn-prev-3').addEventListener('click', () => {
+      step3.classList.add('hidden');
+      step2.classList.remove('hidden');
+      stepIndicator.textContent = 'Paso 2 de 4';
+      stepName.textContent = 'Superficie & Ubicación';
+      progressBar.style.width = '50%';
+    });
+
+    document.getElementById('btn-next-3').addEventListener('click', () => {
+      step3.classList.add('hidden');
+      step4.classList.remove('hidden');
+      stepIndicator.textContent = 'Paso 4 de 4';
+      stepName.textContent = 'Datos de Contacto';
+      progressBar.style.width = '100%';
+    });
+
+    // Step 4 Navigation
+    document.getElementById('btn-prev-4').addEventListener('click', () => {
+      step4.classList.add('hidden');
+      step3.classList.remove('hidden');
+      stepIndicator.textContent = 'Paso 3 de 4';
+      stepName.textContent = 'Inversión Prevista';
+      progressBar.style.width = '75%';
+    });
+
+    // Form Submit & WhatsApp Generation
+    step4.addEventListener('submit', (e) => {
+      e.preventDefault();
+      diagnosticData.nombre = document.getElementById('client-name').value.trim();
+      diagnosticData.email = document.getElementById('client-email').value.trim();
+      diagnosticData.telefono = document.getElementById('client-phone').value.trim();
+      diagnosticData.notas = document.getElementById('client-notes').value.trim();
+
+      step4.classList.add('hidden');
+      stepSuccess.classList.remove('hidden');
+
+      // Compile WhatsApp text directly to Paulina Barba (+52 378 142 5739)
+      const waText = encodeURIComponent(
+        `*SOLICITUD DE PROYECTO — ESTUDIO PERSPECTIVA*\n` +
+        `_Para: Arq. Paulina Barba Martín_\n\n` +
+        `• *Nombre:* ${diagnosticData.nombre}\n` +
+        `• *Teléfono:* ${diagnosticData.telefono}\n` +
+        `• *Email:* ${diagnosticData.email}\n` +
+        `• *Tipología:* ${diagnosticData.tipo}\n` +
+        `• *Superficie aproximada:* ${diagnosticData.superficie}\n` +
+        `• *Ubicación:* ${diagnosticData.ubicacion}\n` +
+        `• *Presupuesto estimado:* ${diagnosticData.presupuesto}\n` +
+        (diagnosticData.notas ? `• *Notas adicionales:* ${diagnosticData.notas}\n` : '') +
+        `\n_Enviado desde el portal web de Estudio Perspectiva_`
+      );
+
+      const waBtn = document.getElementById('whatsapp-direct-link');
+      if (waBtn) {
+        waBtn.href = `https://wa.me/523781425739?text=${waText}`;
+      }
+    });
+
+    // --- Project Detail Modal Data & Handler ---
+    const projectsData = {
+      'casa-tulipan': {
+        title: 'Casa Tulipán',
+        subtitle: 'Interiorismo, Carpintería & Cromatismo Vivo',
+        badge: 'Interiorismo Residencial',
+        img: './images/paulina/casa_tulipan.jpg',
+        location: 'Jalisco, México',
+        type: 'Habitacional',
+        focus: 'Carpintería & Color',
+        desc: 'Intervención de vestíbulo y área social. Incorpora un pórtico volumétrico en tono rosa mexicano que contrasta con paramentos en verde olivo y una celosía móvil de madera natural de piso a techo. La integración de especies vegetales interiores oxigena el espacio y desdibuja la transición entre el exterior y las estancias privadas.'
+      },
+      'escorza-327': {
+        title: 'Escorza 327',
+        subtitle: 'Enmarque del Patrimonio Urbano & Madera Flotante',
+        badge: 'Intervención Arquitectónica',
+        img: './images/paulina/escorza_327.jpg',
+        location: 'Guadalajara, Jalisco',
+        type: 'Habitacional / Estudio',
+        focus: 'Apertura de Vanos & Mobiliario',
+        desc: 'Diseño interior concebido en torno al disfrute visual del paisaje urbano tradicional. Un ventanal corrido de carpintería esbelta enmarca la silueta de los campanarios históricos, mientras que un escritorio suspendido de madera maciza sirve de antepecho y zona de lectura iluminada con luz crepuscular.'
+      },
+      'casa-santa-barbara': {
+        title: 'Casa Santa Bárbara',
+        subtitle: 'Arquitectura en Ladrillo Artesanal & Terrazas',
+        badge: 'Obra Nueva Residencial',
+        img: './images/paulina/casa_santa_barbara.jpg',
+        location: 'Jalisco, México',
+        type: 'Vivienda Unifamiliar',
+        focus: 'Celosía de Barro & Luz',
+        desc: 'Vivienda unifamiliar multinivel resuelta a partir de un juego de volúmenes en ladrillo de lama aparente. Las celosías permiten el paso controlado del viento y la sombra, garantizando privacidad frente a la calle sin renunciar a la iluminación natural y conectando visualmente con jardines perimetrales.'
+      },
+      'casa-santa-fe': {
+        title: 'Casa Santa Fe',
+        subtitle: 'Proceso Constructivo & Supervisión de Mampostería',
+        badge: 'En Construcción',
+        img: './images/paulina/casa_santa_fe.jpg',
+        location: 'Jalisco, México',
+        type: 'Residencial',
+        focus: 'Residencia & Control de Obra',
+        desc: 'Documentación del proceso constructivo de vivienda unifamiliar. Labores de trazo, excavación de cimientos, levantamiento de muros de ladrillo rojo, colado de cadenas de desplante y preparación de instalaciones hidrosanitarias con supervisión técnica permanente en sitio.'
+      },
+      'bodega-aeropuerto': {
+        title: 'Bodega Aeropuerto',
+        subtitle: 'Nave Logística con Estructura Metálica',
+        badge: 'Arquitectura Industrial',
+        img: './images/paulina/bodega_aeropuerto.jpg',
+        location: 'Zona Aeropuerto, Jalisco',
+        type: 'Industrial & Comercial',
+        focus: 'Estructuras de Acero',
+        desc: 'Proyecto ejecutivo integral para complejo de almacenamiento y oficinas logísticas. Diseño de armaduras de celosía en perfiles de acero, claros libres de gran dimensión para maniobra de vehículos de carga y cuerpo frontal con oficinas operativas y sanitarios.'
+      },
+      'estudio-33': {
+        title: 'Estudio 33',
+        subtitle: 'Módulo de Oficinas Corporativas e Ingeniería',
+        badge: 'Comercial & Corporativo',
+        img: './images/paulina/estudio_33.jpg',
+        location: 'Jalisco, México',
+        type: 'Oficinas',
+        focus: 'Lámina Acanalada & Hormigón',
+        desc: 'Instalaciones para firma de arquitectura, ingeniería y urbanismo. Planteamiento sobrio y funcional con fachada ventilada en chapa grecada oscura, zócalo de bloque de concreto aparente y orientación óptima para aprovechamiento de luz indirecta de norte.'
+      },
+      'proyecto-am': {
+        title: 'Proyecto AM',
+        subtitle: 'Corte Axonométrico Perspectivado',
+        badge: 'Sección Axonométrica',
+        img: './images/paulina/proyecto_am.jpg',
+        location: 'Jalisco, México',
+        type: 'Habitacional / Mixto',
+        focus: 'Axonométrico en AutoCAD & 3D',
+        desc: 'Representación axonométrica que ilustra la estratificación espacial en tres niveles: áreas sociales en planta baja, mezzanine de trabajo y zona íntima en nivel superior. Los planos de carpintería y acabados fueron coordinados directamente desde el modelo analítico.'
+      },
+      'wave': {
+        title: 'Wave',
+        subtitle: 'Instalación y Maqueta Experimental',
+        badge: 'Maqueta Física & Urbanismo',
+        img: './images/paulina/wave.jpg',
+        location: 'Guadalajara, Jalisco',
+        type: 'Conceptual',
+        focus: 'Maqueta & Escala Humana',
+        desc: 'Estudio plástico y formal de una estructura de conexión peatonal con graderío integrado. Fabricada en madera y acrílico a escala, analiza las dinámicas de permanencia, contemplación y circulación en espacios públicos.'
+      },
+      'plan-maestro-soria': {
+        title: 'Plan Maestro Soria',
+        subtitle: 'Ordenamiento Urbano & Paisajismo Ribereño',
+        badge: 'Planificación Urbana',
+        img: './images/paulina/plan_maestro_soria.jpg',
+        location: 'Soria, Guanajuato',
+        type: 'Masterplan Urbano',
+        focus: 'Morfología & Corredor Verde',
+        desc: 'Propuesta de masterplan integral sobre un polígono territorial de escala media. Organiza la retícula vial en función de las curvas de nivel, protege el cauce del río mediante un parque lineal biológico y plantea tipologías de manzana cerrada con jardines comunitarios.'
+      }
+    };
+
+    const modal = document.getElementById('project-modal');
+    const closeModalBtn = document.getElementById('close-modal-btn');
+
+    document.querySelectorAll('.open-modal-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const pid = btn.getAttribute('data-project');
+        const p = projectsData[pid];
+        if (p && modal) {
+          document.getElementById('modal-img').src = p.img;
+          document.getElementById('modal-img').alt = p.title;
+          document.getElementById('modal-title').textContent = p.title;
+          document.getElementById('modal-subtitle').textContent = p.subtitle;
+          document.getElementById('modal-badge').textContent = p.badge;
+          document.getElementById('modal-desc').textContent = p.desc;
+          document.getElementById('modal-location').textContent = p.location;
+          document.getElementById('modal-type').textContent = p.type;
+          document.getElementById('modal-focus').textContent = p.focus;
+          modal.classList.remove('hidden');
+        }
+      });
+    });
+
+    if (closeModalBtn && modal) {
+      closeModalBtn.addEventListener('click', () => modal.classList.add('hidden'));
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.classList.add('hidden');
+      });
+    }
+  </script>
+</body>
+</html>
